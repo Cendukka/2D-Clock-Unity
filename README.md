@@ -1,10 +1,9 @@
 # 2D-Clock-Unity
 
  * Author: Samuli Lehtonen
- * Version: 1.0
+ * Version: 1
  * Creation date: 29.03.2020
  * Short description: This unity project is about a simple 2D Analog and digital clock that represents user's system's current time.
- *
  
  
  ## How to use the script only:
