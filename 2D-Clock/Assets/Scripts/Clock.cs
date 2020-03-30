@@ -67,10 +67,10 @@ public class Clock : MonoBehaviour
         currentSeconds = currentTime.Second;
         currentMinutes = currentTime.Minute;
         currentHours = currentTime.Hour;
-        //Set the canvas text object's text to current time
-        digiSecondText.text = currentSeconds.ToString();
-        digiMinuteText.text = currentMinutes.ToString();
-        digiHourText.text = currentHours.ToString();
+        //Set the canvas text object's text to current time, pad left with 0 if lover than 10
+        digiSecondText.text = currentSeconds.ToString().PadLeft(2,'0');
+        digiMinuteText.text = currentMinutes.ToString().PadLeft(2, '0');
+        digiHourText.text = currentHours.ToString().PadLeft(2, '0');
     }
     // FixedUpdate is called every fixed frame-rate frame
     private void FixedUpdate()
